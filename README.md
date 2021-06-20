@@ -1,11 +1,44 @@
-# An Analysis of Kickstarter Campaign
-CU Bootcamp Excel starter module to perform analysis on kickstarter data to uncover trends. 
-## Outcomes Based on Launch Dates.
-The month that launched the most successful Kickstarter campaigns was May. However, January, June, July and October all had roughly the same number of failed campaigns launched.
-![Outcome_Based_on_Launch_Date.png](C:\Users\shikh\Desktop\Analysis Projects\Crowdfunding Analysis)
-## Tendency.
-The mean of each distribution is around the 3rd quartile, so the data follows similar distributions in each subset.
-The standard deviations are larger than the mean, which means everything below the mean is considered "close" to the center.
-Some large values are driving all of these distributions. The standard deviations are all roughly twice the IQR in each distribution, except in the failed Kickstarters, where the standard deviation is closer to three times the IQR. There must be some failed Kickstarters with really high goals!
-## Outliers
-The mean campaign goal is around £4,000. This is outside of the range of outliers for amount pledged, so Louise should probably try to get her play produced for less than £4,000. Half of the campaign goals are less than £2,000, which is just over the 3rd quartile for amounts pledged.![Outliers_Goals_vs_Pledge.png](C:\Users\shikh\Desktop\Analysis Projects\Crowdfunding Analysis)
+# Kick Starter Challenge Analysis
+
+## Overview of Project
+The purpose of this project is to analyze various crowdfunding data in order to help Louise to determine the factors based on Launch Dates and goals, in order to make her crowdfunding campaign a success.
+
+## Analysis and Challenges.
+The analysis was carried out by studying how different campaigns performed in their fundraising campaign with primary focus on their launch dates and their funding goals. **Pivot table** was used to _**Summarise and Pull**_ the relevant data required for the analysis while **Pivot Chart** was used to _**Visualise**_ the data.   
+
+### Challenges
+
+#### Common Challenge: 
+a.  In both deliverables, figuring out which fields to put in the report while inserting pivot table seemed to be a bit tricky. This was overcome by multiple trial and error process.  
+
+#### Deliverable 1:
+a.	Auto sorting the campaign outcomes in descending order did not work so therefore I googled how to manually move the columns and applied it. 
+
+b.	Likewise, I was also able to get the months in the row after much trial and error and playing with the fields. 
+
+#### Deliverable 2:
+a.	While the values and graph were all correct, I could not manually change the column title from ‘Sum of Percentage Successful’ to ‘Percentage Successful’ as shown in the    solution. _**‘PivotTable field name already exist’**_ message box would appear every time I tried to change it to ‘Percentage’, therefore, I replaced ‘percentage’ with ‘percent’ in the column title.
+
+![Naming_Error](https://user-images.githubusercontent.com/85258893/122686170-e5e68700-d1dd-11eb-9475-f19636d026bb.png)
+
+## Conclusions
+a.  More Kickstarter campaign were launched in the months of May and June. Campaign launched in May were most successful.  
+b.  Campaign launched during summer tend to be more successful than campaigns launched in winter. 
+
+![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/85258893/122686083-6062d700-d1dd-11eb-84be-30b8d89003be.png)
+
+c.  While none of the Kickstarter campaign were cancelled, campaign goals between 20000-35000 and above 40000 were largely unsuccessful suggesting that launching greater number of smaller campaign goals would lead to more successful campaign.  
+
+![Outcomes_vs_Goals](https://user-images.githubusercontent.com/85258893/122686100-7ff9ff80-d1dd-11eb-9bdd-072481727f56.png)
+
+## Limitation of Dataset.
+
+The dataset does not identify backers’ type, whether they are individuals or companies. This could suggest what goals (higher or lower) to set in relation to similar backers.
+
+## Other possible tables and/or graphs
+
+a. Outcome based on geographic region.
+
+b. Outcome based on length of campaign period. 
+
+c. Relation between number of Backers and Outcome Goals.
